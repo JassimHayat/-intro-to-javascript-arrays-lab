@@ -19,7 +19,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-food.push('pizza','cheeseburger');
+foods.push('pizza','cheeseburger');
 console.log('Exercise 2 result:', foods);
 
 /*
@@ -30,7 +30,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-food.unshift('taco')
+foods.unshift('taco')
 console.log('Exercise 3 result:', foods);
 
 /*
@@ -58,7 +58,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-food.splice(2,0,'tofu')
+foods.splice(2,0,'tofu')
 console.log('Exercise 5 result:', foods);
 
 /*
@@ -116,10 +116,10 @@ console.log("Exercise 8 Result: ", soyIdx);
 // Complete Exercise 9 in the space below:
 // */
 
-const food = ['39;taco','sushi', 'cupcake','tofu','cheeseburger']
+const food = ['taco','sushi','cupcake','tofu','cheeseburger']
 
-const allFoods = foods.join('->');
-console.log('Exercise 9 result', allFoods);
+const allFoods = foods.join(' -> ');
+console.log('Exercise 9 result:', allFoods);
 
 /*
 Exercise 10: Check for an element
@@ -132,12 +132,11 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-const Food = ['taco', 'sushi','cupcake','tofu','cheeseburger'];
-
+const Foods = ['taco', 'sushi','cupcake','tofu','cheeseburger'];
 
 const hasSoup = foods.includes('soup');
 
-console.log('Exercise 10 result:', hasSoup);
+console.log('Exercise 10 result', hasSoup);
 
 
 /*
@@ -152,15 +151,16 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 let odds = [];
 for (let i = 0; i < nums.length; i++) {
-  if (nums[i] % 2 !== 0) {
-    odds.push(nums[i]);
-  }
+    if (nums[i] % 2 !== 0) { 
+        odds.push(nums[i]); 
+    }
 }
-console.log('Exercise 11 result:', odds);
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
+console.log('Exercise 11 Result:', odds);
 
 
 /*
